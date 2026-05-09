@@ -30,3 +30,27 @@ To run the examples, install Node.js and execute:
 node "Problems/Frequency Counter/same_naive_solution.js"
 node "Problems/Frequency Counter/same_refactored_solution.js"
 ```
+
+### Multiple Pointers - Sum Zero
+
+Files:
+- `Problems/Two Pointer/sum_zero_naive.js`
+- `Problems/Two Pointer/sum_zero_refactored.js`
+
+This problem takes a sorted array of integers and returns the first pair where the two numbers add up to zero. For example, in `[-4, -3, -2, -1, 0, 1, 2, 5]`, the pair `[-2, 2]` adds to zero.
+
+The naive solution uses two nested loops to compare every possible pair. This is easy to understand, but it becomes slower as the array grows because each value may be compared with many other values. This approach has `O(n^2)` time complexity.
+
+The refactored solution uses the multiple pointers pattern. It starts one pointer at the beginning of the sorted array and one at the end, then moves the pointers inward based on whether the current sum is too high or too low. This reduces the time complexity to `O(n)` because each pointer moves through the array at most once.
+
+Use the multiple pointers pattern when:
+- The input is sorted or can be sorted safely.
+- You need to find a pair or group of values that meet a condition.
+- A nested loop solution is comparing too many combinations.
+
+To run the examples, install Node.js and execute:
+
+```bash
+node "Problems/Two Pointer/sum_zero_naive.js"
+node "Problems/Two Pointer/sum_zero_refactored.js"
+```
