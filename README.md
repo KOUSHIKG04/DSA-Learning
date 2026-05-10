@@ -11,12 +11,15 @@
 Files:
 - `Problems/Frequency Counter/same_naive_solution.js`
 - `Problems/Frequency Counter/same_refactored_solution.js`
+- `Problems/anagram.js`
 
 This problem checks whether every value in the first array has its squared value in the second array with the same frequency. For example, `[1, 2, 3, 2]` and `[9, 1, 4, 4]` should return `true` because `1^2 = 1`, `2^2 = 4` appears twice, and `3^2 = 9`.
 
 The naive solution uses `indexOf` inside a loop and removes matched values with `splice`. It is useful for understanding the problem step by step, but it is slower because searching inside the second array happens repeatedly. This approach has roughly `O(n^2)` time complexity.
 
 The refactored solution uses the frequency counter pattern. It builds objects that count how many times each value appears in both arrays, then compares the counts. This is the better approach when you need to compare two collections by value frequency, such as checking squared values, anagrams, duplicates, or matching grouped data. This approach has `O(n)` time complexity because each array is looped through only a small fixed number of times.
+
+The anagram example uses the same frequency counter idea with strings. It counts the characters in the first word, then subtracts those counts while reading the second word. If a needed character is missing or has already been used up, the strings are not valid anagrams.
 
 Use the frequency counter pattern when:
 - You need to compare two arrays, strings, or collections.
@@ -29,6 +32,7 @@ To run the examples, install Node.js and execute:
 ```bash
 node "Problems/Frequency Counter/same_naive_solution.js"
 node "Problems/Frequency Counter/same_refactored_solution.js"
+node "Problems/anagram.js"
 ```
 
 ### Multiple Pointers - Sum Zero
