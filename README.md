@@ -58,3 +58,33 @@ To run the examples, install Node.js and execute:
 node "Problems/Two Pointer/sum_zero_naive.js"
 node "Problems/Two Pointer/sum_zero_refactored.js"
 ```
+
+### Multiple Pointers - Unique Values
+
+File:
+- `Problems/unique_values.js`
+
+This problem counts how many unique values exist in a sorted array. For example, `[1, 2, 2, 5, 7, 7, 99]` has five unique values: `1`, `2`, `5`, `7`, and `99`.
+
+The solution uses the multiple pointers pattern. One pointer tracks the position of the last unique value, while the second pointer scans through the rest of the array. When a new value is found, it is moved next to the previous unique value. This solves the problem in `O(n)` time and uses `O(1)` extra space.
+
+To run the example, install Node.js and execute:
+
+```bash
+node "Problems/unique_values.js"
+```
+
+### Optional Challenge Problems
+
+File:
+- `Problems/OptionalChallange.js`
+
+This file contains extra practice problems using frequency counter and multiple pointers patterns. It includes solutions for problems such as `sameFrequency`, `areThereDuplicates`, `constructNote`, `findAllDuplicates`, `averagePair`, `isSubsequence`, and `findPair`.
+
+These challenges are useful for practicing how to choose an efficient pattern based on the problem constraints. Some solutions compare value frequencies with objects or sets, while others use sorted input and pointer movement to avoid unnecessary nested loops.
+
+To run or test these examples, install Node.js and execute:
+
+```bash
+node "Problems/OptionalChallange.js"
+```
