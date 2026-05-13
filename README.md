@@ -4,6 +4,8 @@
 
 3. Problem Solving Approach and Patterns - This topic explains how to approach algorithm problems by understanding the problem, exploring examples, breaking the solution into steps, solving or simplifying, and then refactoring. It also introduces common patterns such as frequency counters, multiple pointers, sliding window, and divide and conquer, showing how they can reduce time complexity compared with naive nested-loop solutions.
 
+4. Recursion - The `07-pdf-slides-recursion.pdf` slides introduce recursion as a function or process that calls itself. The content explains the two essential parts of recursive functions: a base case that stops the recursion and a changed input that moves each call toward that base case. It also covers how recursive calls use the call stack, why returning values matters, common mistakes such as missing base cases or causing stack overflow, helper method recursion, pure recursion, and how to think about time and space complexity for recursive solutions. The practice section includes recursive challenges such as `power` and `productOfArray`.
+
 ## Problems
 
 ### Frequency Counter - Same
