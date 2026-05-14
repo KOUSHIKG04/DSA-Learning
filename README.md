@@ -8,6 +8,23 @@
 
 ## Problems
 
+### Recursion Examples
+
+Files:
+- `Problems/recursion/callstack_example.js`
+- `Problems/recursion/collect_odds_pure_recursion.js`
+
+The call stack example shows how JavaScript functions call other functions and how those calls are handled in order. The `wakeUp` function calls smaller steps like `takeShower`, `eatBreakfast`, and `cookFood`, which makes it useful for understanding how function calls are placed on and removed from the call stack.
+
+The collect odds example uses pure recursion to return all odd values from an array. It checks the first value, adds it to a new array if it is odd, then recursively calls itself with the rest of the array until the base case is reached.
+
+To run the examples, install Node.js and execute:
+
+```bash
+node "Problems/recursion/callstack_example.js"
+node "Problems/recursion/collect_odds_pure_recursion.js"
+```
+
 ### Frequency Counter - Same
 
 Files:
