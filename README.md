@@ -15,12 +15,15 @@ Files:
 - `Problems/recursion/collect_odds_pure_recursion.js`
 - `Problems/recursion/factorial_iterative.js`
 - `Problems/recursion/factorial_recursive.js`
+- `Problems/recursion/helper_method_recursion.js`
 
 The call stack example shows how JavaScript functions call other functions and how those calls are handled in order. The `wakeUp` function calls smaller steps like `takeShower`, `eatBreakfast`, and `cookFood`, which makes it useful for understanding how function calls are placed on and removed from the call stack.
 
 The collect odds example uses pure recursion to return all odd values from an array. It checks the first value, adds it to a new array if it is odd, then recursively calls itself with the rest of the array until the base case is reached.
 
 The factorial examples compare the iterative and recursive ways to multiply every number from the input down to `1`. The iterative version uses a loop and a running total, while the recursive version uses a base case and smaller repeated calls.
+
+The helper method recursion example also collects odd values, but it uses an inner helper function and a shared `result` array. This keeps the recursive logic separate from the outer function that prepares and returns the final result.
 
 To run the examples, install Node.js and execute:
 
@@ -29,6 +32,7 @@ node "Problems/recursion/callstack_example.js"
 node "Problems/recursion/collect_odds_pure_recursion.js"
 node "Problems/recursion/factorial_iterative.js"
 node "Problems/recursion/factorial_recursive.js"
+node "Problems/recursion/helper_method_recursion.js"
 ```
 
 ### Frequency Counter - Same
