@@ -6,6 +6,10 @@
 
 4. Recursion - The `07-pdf-slides-recursion.pdf` slides introduce recursion as a function or process that calls itself. The content explains the two essential parts of recursive functions: a base case that stops the recursion and a changed input that moves each call toward that base case. It also covers how recursive calls use the call stack, why returning values matters, common mistakes such as missing base cases or causing stack overflow, helper method recursion, pure recursion, and how to think about time and space complexity for recursive solutions. The practice section includes recursive challenges such as `power` and `productOfArray`.
 
+## Latest Commit
+
+`Add helper method recursion example` adds `Problems/recursion/helper_method_recursion.js`, which demonstrates helper method recursion by using an inner recursive function to collect odd values while the outer function manages and returns the shared result array.
+
 ## Problems
 
 ### Recursion Examples
