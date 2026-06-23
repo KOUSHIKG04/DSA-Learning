@@ -1,3 +1,11 @@
+##
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=60&pause=1000&color=36BCF7&width=1600&height=120&lines=DSA+Journey...;Will+update+the+readme+in+a+while..." alt="Typing SVG" />
+</div>
+
+##
+
 1. Big O Notation - Big O notation is used to describe how an algorithm's time or space usage grows as the input size increases. It focuses on the overall growth pattern instead of exact execution time, making it easier to compare different solutions. The content explains common complexities such as O(1), O(log n), O(n), and O(n^2), how to simplify Big O expressions by ignoring constants and smaller terms, and how loops, nested loops, and extra memory usage affect time and space complexity.
 
 2. Big O of Arrays and Objects - This topic explains how JavaScript arrays and objects behave with Big O. Objects are useful for unordered key-value data and give fast access, insertion, and removal, while searching and methods like Object.keys, Object.values, and Object.entries take O(n). Arrays are useful when order matters, but adding or removing items at the beginning is slower because indexes must shift. It also compares common array methods like push, pop, shift, unshift, concat, slice, splice, sort, map, filter, and reduce.
@@ -15,6 +23,7 @@
 ### Recursion Examples
 
 Files:
+
 - `Problems/recursion/callstack_example.js`
 - `Problems/recursion/collect_odds_pure_recursion.js`
 - `Problems/recursion/factorial_iterative.js`
@@ -42,6 +51,7 @@ node "Problems/recursion/helper_method_recursion.js"
 ### Frequency Counter - Same
 
 Files:
+
 - `Problems/Frequency Counter/same_naive_solution.js`
 - `Problems/Frequency Counter/same_refactored_solution.js`
 - `Problems/anagram.js`
@@ -55,6 +65,7 @@ The refactored solution uses the frequency counter pattern. It builds objects th
 The anagram example uses the same frequency counter idea with strings. It counts the characters in the first word, then subtracts those counts while reading the second word. If a needed character is missing or has already been used up, the strings are not valid anagrams.
 
 Use the frequency counter pattern when:
+
 - You need to compare two arrays, strings, or collections.
 - The order of values does not matter.
 - The number of times each value appears does matter.
@@ -71,6 +82,7 @@ node "Problems/anagram.js"
 ### Multiple Pointers - Sum Zero
 
 Files:
+
 - `Problems/Two Pointer/sum_zero_naive.js`
 - `Problems/Two Pointer/sum_zero_refactored.js`
 
@@ -81,6 +93,7 @@ The naive solution uses two nested loops to compare every possible pair. This is
 The refactored solution uses the multiple pointers pattern. It starts one pointer at the beginning of the sorted array and one at the end, then moves the pointers inward based on whether the current sum is too high or too low. This reduces the time complexity to `O(n)` because each pointer moves through the array at most once.
 
 Use the multiple pointers pattern when:
+
 - The input is sorted or can be sorted safely.
 - You need to find a pair or group of values that meet a condition.
 - A nested loop solution is comparing too many combinations.
@@ -95,6 +108,7 @@ node "Problems/Two Pointer/sum_zero_refactored.js"
 ### Multiple Pointers - Unique Values
 
 File:
+
 - `Problems/unique_values.js`
 
 This problem counts how many unique values exist in a sorted array. For example, `[1, 2, 2, 5, 7, 7, 99]` has five unique values: `1`, `2`, `5`, `7`, and `99`.
@@ -110,6 +124,7 @@ node "Problems/unique_values.js"
 ### Optional Challenge Problems
 
 File:
+
 - `Problems/OptionalChallange.js`
 
 This file contains extra practice problems using frequency counter and multiple pointers patterns. It includes solutions for problems such as `sameFrequency`, `areThereDuplicates`, `constructNote`, `findAllDuplicates`, `averagePair`, `isSubsequence`, and `findPair`.
