@@ -445,3 +445,32 @@ function collectStrings(obj) {
 
   return resArr;
 }
+
+
+// Practice 
+function name(arr, val){
+    if(arr.length === 0 || value === undefined) return false;
+    
+    for(let [i, ele]of arr.entries()){
+        if(ele === val) return i
+    }
+    
+    return -1
+}
+
+function name(arr, val) {
+    if (!Array.isArray(arr) || val === undefined) return false;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === val) return i;
+    }
+
+    return -1;
+}
+
+
+function name(arr, val) {
+    return arr.indexOf(val);
+}
+
+
