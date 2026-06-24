@@ -446,54 +446,44 @@ function collectStrings(obj) {
   return resArr;
 }
 
+// Practice
+function name(arr, val) {
+  if (arr.length === 0 || value === undefined) return false;
 
-// Practice 
-function name(arr, val){
-    if(arr.length === 0 || value === undefined) return false;
-    
-    for(let [i, ele]of arr.entries()){
-        if(ele === val) return i
-    }
-    
-    return -1
+  for (let [i, ele] of arr.entries()) {
+    if (ele === val) return i;
+  }
+
+  return -1;
 }
 
 function name(arr, val) {
-    if (!Array.isArray(arr) || val === undefined) return false;
+  if (!Array.isArray(arr) || val === undefined) return false;
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === val) return i;
-    }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === val) return i;
+  }
 
-    return -1;
+  return -1;
 }
-
 
 function name(arr, val) {
-    return arr.indexOf(val);
+  return arr.indexOf(val);
 }
-
 
 // Binary search -> for sorted array
 function binarySearch(arr, val) {
-    let left = 0;
-    let right = arr.length - 1;
+  let left = 0;
+  let right = arr.length - 1;
 
-    while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
 
-        if (arr[mid] === val) {
-            return mid;
-        }
+    if (arr[mid] === val) return mid;
 
-        if (arr[mid] < val) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
-    }
+    if (arr[mid] < val) left = mid + 1;
+    else right = mid - 1;
+  }
 
-    return -1;
+  return -1;
 }
-
-
